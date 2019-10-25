@@ -1,0 +1,47 @@
+[push]
+	default = simple
+[merge]
+	tool = tkdiff
+	conflictstyle = diff3
+[core]
+	editor = vim
+[alias]
+  # Stage files
+  a = add
+  # Checkout
+	co = checkout
+  # Checkout with creating branch
+  cb = checkout -b
+	# List branches
+  br = branch
+  # Delete merged branch
+	bd = branch -d
+  # Delete unmerged branch
+  bD = branch -D
+  # View abbreviated SHA, description, and history graph of the latest 20 commits
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  # Log Pretty
+  lp  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	# View the current working tree status using the short format
+	st = status -s
+  # View the current working tree status using the short format
+  stu = status -uno
+  # Commit
+  ci = commit
+  # Commit with message
+  cm = commit -m
+  # Edit latest commit without editing the message
+  ca = commit --amend
+  # Edit latest commit without editing the message
+  cane = commit --amend --no-edit
+  # Pull latest with rebase
+  up = pull --rebase
+  # Abort Rebase
+  rba = rebase --abort
+  # Continue rebasing
+  rbc = rebase --continue
+  # Interactive rebase
+  rbi = rebase -i
+
+[include]
+    path = ~/.gitconfig_private
