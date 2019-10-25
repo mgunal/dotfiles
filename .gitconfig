@@ -22,9 +22,9 @@
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
   # Log Pretty
   lp  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	# View the current working tree status using the short format
+	# View the current working tree status
 	st = status
-  # View the current working tree status using the short format
+  # View the current working tree status excluding untracked files
   stu = status -uno
   # Commit
   ci = commit
