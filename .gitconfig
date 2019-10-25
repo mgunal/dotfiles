@@ -8,6 +8,8 @@
 [alias]
   # Stage files
   a = add
+  # Stage all tracked files
+  au = add --update
   # Checkout
 	co = checkout
   # Checkout with creating branch
